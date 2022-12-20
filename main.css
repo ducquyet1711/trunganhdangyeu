@@ -43,11 +43,14 @@ button#activate:hover {
 	top: -1.5vmin;
 	transition: all 0.5s ease 0s;
 }
-button#activate:active, button#activate.pushed {
+
+button#activate:active,
+button#activate.pushed {
 	box-shadow: 0 1vmin 0.15vmin 0vmin #af0000, 0 1vmin 0.15vmin 0vmin #af0000;
 	top: 0.5vmin;
 	transition: all 0.25s ease 0s;
 }
+
 button#activate.pushed {
 	box-shadow: 0 0 20px 10px #ff3c3c, 0 0 100px 50px #ff2828;
 	background: #ff0000;
@@ -70,7 +73,7 @@ button#activate.pushed {
 }
 
 .box.opened {
-  transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg) rotate3d(1, 0, 0, 180deg);
+	transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg) rotate3d(1, 0, 0, 180deg);
 }
 
 .box div {
@@ -85,25 +88,30 @@ button#activate.pushed {
 	box-shadow: 0 0 3px 0 #00bcd48a;
 }
 
-.box > div:nth-child(1) {
+.box>div:nth-child(1) {
 	opacity: 0;
 }
-.box > div:nth-child(2) {
+
+.box>div:nth-child(2) {
 	transform: rotateX(90deg) translate3d(0px, 5vmin, 5vmin);
 	height: 10vmin;
 }
-.box > div:nth-child(3) {
+
+.box>div:nth-child(3) {
 	transform: rotateX(0deg) translate3d(0, 0, 10vmin);
 }
-.box > div:nth-child(4) {
+
+.box>div:nth-child(4) {
 	transform: rotateX(270deg) translate3d(0px, -5vmin, 40vmin);
 	height: 10vmin;
 }
-.box > div:nth-child(5) {
+
+.box>div:nth-child(5) {
 	transform: rotateY(90deg) translate3d(-5vmin, 0, 40vmin);
 	width: 10vmin;
 }
-.box > div:nth-child(6) {
+
+.box>div:nth-child(6) {
 	transform: rotateY(-90deg) translate3d(5vmin, 0vmin, 5vmin);
 	width: 10vmin;
 }
@@ -112,7 +120,7 @@ button#activate.pushed {
 
 
 .grid {
-	background:repeating-linear-gradient(150deg, rgba(255,255,255,0) 0, rgba(255,255,255,0) 49px, rgb(255 255 255 / 10%) 50px ,rgb(0 0 0 / 30%) 51px , rgba(255,255,255,0) 55px ), repeating-linear-gradient(30deg, rgba(255,255,255,0) 0, rgba(255,255,255,0) 49px, rgb(255 255 255 / 10%) 50px ,rgb(0 0 0 / 30%) 51px , rgba(255,255,255,0) 55px );
+	background: repeating-linear-gradient(150deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 49px, rgb(255 255 255 / 10%) 50px, rgb(0 0 0 / 30%) 51px, rgba(255, 255, 255, 0) 55px), repeating-linear-gradient(30deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 49px, rgb(255 255 255 / 10%) 50px, rgb(0 0 0 / 30%) 51px, rgba(255, 255, 255, 0) 55px);
 	position: fixed;
 	width: 200vw;
 	height: 150vh;
@@ -160,17 +168,15 @@ button#activate.pushed {
 }
 
 
-
-
-
 .hinges {
-  position: absolute;
+	position: absolute;
 	z-index: 3;
 	transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg) rotate3d(1, 0, 0, 90deg);
 }
 
 
-.hinges:before, .hinges:after {
+.hinges:before,
+.hinges:after {
 	content: "";
 	background: #2b2b2b;
 	width: 5vmin;
@@ -183,13 +189,15 @@ button#activate.pushed {
 	box-sizing: border-box;
 	margin-left: -16.25vmin;
 }
+
 .hinges:after {
-  margin-left: 13.75vmin;
-  margin-top: -24.5vmin;
+	margin-left: 13.75vmin;
+	margin-top: -24.5vmin;
 }
 
 
-.box > span:before, .box > span:after {
+.box>span:before,
+.box>span:after {
 	content: "";
 	width: 5vmin;
 	height: 1.5vmin;
@@ -198,13 +206,14 @@ button#activate.pushed {
 	margin-left: 6vmin;
 	border-radius: 0 0 5px 5px;
 }
-.box > span:after  {
-  margin-left: 36vmin;
+
+.box>span:after {
+	margin-left: 36vmin;
 }
 
-.box > span {
-  transform: rotateX(89deg) translate(0.3vmin, 0.3vmin);
-  position: absolute;
+.box>span {
+	transform: rotateX(89deg) translate(0.3vmin, 0.3vmin);
+	position: absolute;
 }
 
 
@@ -224,11 +233,11 @@ button#activate.pushed {
 	transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg) rotate3d(1, 0, 0, 90deg) translate(33.5vmin, -2vmin);
 	text-align: center;
 	width: 49vmin;
-	
+
 }
 
 div#panel:before {
-	content: "DO YOU LOVE ME";
+	content: "EM YÊU ANH KHUM?";
 	top: 3vmin;
 	position: relative;
 	font-size: 8vmin;
@@ -262,7 +271,7 @@ div#panel:before {
 }
 
 #panel2 {
-    position: absolute;
+	position: absolute;
 	background: #ff0000d0;
 	color: #ffffff;
 	font-family: Arial, Helvetica, serif;
@@ -280,11 +289,11 @@ div#panel:before {
 }
 
 #panel2.show {
-    display: block !important;
+	display: block !important;
 }
 
 div#panel2::before {
-    content: "WARNING";
+	content: "WARNING";
 	top: 3vmin;
 	position: relative;
 	font-size: 10vmin;
@@ -295,7 +304,7 @@ div#panel2::before {
 #msg {
 	margin-top: 5vmin;
 	text-shadow: 0 0 2px #fff;
-    font-size: 50px;
+	font-size: 50px;
 }
 
 #time {
@@ -325,12 +334,12 @@ div#panel2::before {
 }
 
 #abort:hover {
-  background: #ffffff;
+	background: #ffffff;
 	box-shadow: 0 0 15px 5px #fff;
 }
 
 #no {
-    background: #ffffffb8;
+	background: #ffffffb8;
 	color: #d30303;
 	cursor: pointer;
 	padding: 1vmin 2.75vmin;
@@ -341,12 +350,12 @@ div#panel2::before {
 }
 
 #no:hover {
-    background: #ffffff;
+	background: #ffffff;
 	box-shadow: 0 0 15px 5px #fff;
 }
 
 #again {
-    background: #ffffffb8;
+	background: #ffffffb8;
 	color: #d30303;
 	cursor: pointer;
 	padding: 1vmin 2.75vmin;
@@ -354,19 +363,21 @@ div#panel2::before {
 	border-radius: 0.25vmin;
 	font-weight: bold;
 	animation: highlight 1s 0s infinite;
-    position: absolute;
-    top: 70%;
-    right: 22%;
+	position: absolute;
+	top: 70%;
+	right: 22%;
 }
 
 #again:hover {
-    background: #ffffff;
+	background: #ffffff;
 	box-shadow: 0 0 15px 5px #fff;
 }
 
 
 @keyframes highlight {
-	50% { box-shadow: 0 0 15px 5px #fff;}
+	50% {
+		box-shadow: 0 0 15px 5px #fff;
+	}
 }
 
 
@@ -385,7 +396,8 @@ div#turn-off {
 	z-index: 7;
 }
 
-div#turn-off:before, div#turn-off:after {
+div#turn-off:before,
+div#turn-off:after {
 	content: "";
 	position: fixed;
 	left: 0;
@@ -395,6 +407,7 @@ div#turn-off:before, div#turn-off:after {
 	width: 100vw;
 	transition: height 0.5s ease 0s;
 }
+
 div#turn-off:after {
 	top: inherit;
 	bottom: 0;
@@ -405,7 +418,8 @@ div#turn-off.close {
 	height: 100vh;
 }
 
-div#turn-off.close:before, div#turn-off.close:after {
+div#turn-off.close:before,
+div#turn-off.close:after {
 	transition: height 0.1s ease 0.1s;
 	height: 49.75vh;
 }
@@ -419,6 +433,7 @@ div#turn-off.close:before, div#turn-off.close:after {
 	color: #ff0000;
 	text-shadow: 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff;
 }
+
 #detonate {
 	display: none;
 	color: #fff;
@@ -426,27 +441,30 @@ div#turn-off.close:before, div#turn-off.close:after {
 	font-size: 8vmin;
 	font-family: Arial, Helvetica, serif;
 	text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff;
-}	
+}
+
 #detonate.show {
 	display: block;
 	animation: blink 0.25s 0s infinite;
-}	
+}
 
 #abort.hide {
 	display: none;
 }
 
 #no.hide {
-    display: none;
+	display: none;
 }
 
 #again.hide {
-    display: none;
+	display: none;
 }
 
 
 @keyframes blink {
-	50% { opacity: 0;}
+	50% {
+		opacity: 0;
+	}
 }
 
 
@@ -463,7 +481,8 @@ div#turn-off.close:before, div#turn-off.close:after {
 	position: absolute;
 }
 
-div#closing:before, div#closing:after {
+div#closing:before,
+div#closing:after {
 	content: "";
 	width: 50vw;
 	height: 1.5vh;
@@ -500,6 +519,7 @@ div#closing.close:after {
 	z-index: 8;
 	display: none;
 }
+
 #reload {
 	position: absolute;
 	z-index: 8;
@@ -515,25 +535,35 @@ div#closing.close:after {
 	transition: transform 0.5s ease 0s;
 	outline: none;
 }
+
 #reload:hover {
 	background: #ef0000;
 	transform: rotate(360deg);
 	transition: transform 0.5s ease 0s;
 }
-#restart.show { 
-	display: block; 
+
+#restart.show {
+	display: block;
 }
 
-#restart.show #reload {  
-	animation: refresh 3.5s 0s 1; 
-	opacity:1;
+#restart.show #reload {
+	animation: refresh 3.5s 0s 1;
+	opacity: 1;
 }
 
 
 @keyframes refresh {
-		0% { opacity: 0; }
-	 50% { opacity: 0; }
-	100% { opacity: 1; }
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 
@@ -563,48 +593,68 @@ button#reload:after {
 
 
 @keyframes warning-ligth {
-	 0% { box-shadow: 0 0 0 100vmin #ff000060, 0 0 0 5vmin #ff000060; }
-	50% { box-shadow: 0 0 0 100vmin #ff000020, 0 0 0 5vmin #ff000020; }
+	0% {
+		box-shadow: 0 0 0 100vmin #ff000060, 0 0 0 5vmin #ff000060;
+	}
+
+	50% {
+		box-shadow: 0 0 0 100vmin #ff000020, 0 0 0 5vmin #ff000020;
+	}
 }
 
 
 
 #mute {
-    position: absolute;
-    bottom: 1vmin;
-    right: 1vmin;
-    background: #8bc34a80;
-    width: 6vmin;
-    height: 6vmin;
-    cursor: pointer;
-    border: 0.5vmin solid #151515;
+	position: absolute;
+	bottom: 1vmin;
+	right: 1vmin;
+	background: #8bc34a80;
+	width: 6vmin;
+	height: 6vmin;
+	cursor: pointer;
+	border: 0.5vmin solid #151515;
 }
+
 #mute.muted {
-    background: #ff000080;
+	background: #ff000080;
 }
 
 #mute:before {
-    content: "";
-    border: 0.75vmin solid transparent;
-    height: 2vmin;
-    border-right: 2vmin solid #151515;
-    position: absolute;
-    border-left-width: 0;
-    top: 1.25vmin;
-    right: 1.25vmin;
+	content: "";
+	border: 0.75vmin solid transparent;
+	height: 2vmin;
+	border-right: 2vmin solid #151515;
+	position: absolute;
+	border-left-width: 0;
+	top: 1.25vmin;
+	right: 1.25vmin;
 }
+
 #mute:after {
-    content: "";
-    border: 0vmin solid transparent;
-    height: 2vmin;
-    border-right: 1.5vmin solid #151515;
-    position: absolute;
-    top: 2vmin;
-    right: 3.5vmin;
+	content: "";
+	border: 0vmin solid transparent;
+	height: 2vmin;
+	border-right: 1.5vmin solid #151515;
+	position: absolute;
+	top: 2vmin;
+	right: 3.5vmin;
 }
 
 
 #abort a {
-    text-decoration: none;
-    color: #d30303;
+	text-decoration: none;
+	color: #d30303;
+}
+
+
+@media (max-width: 46.1875em) {
+
+	#time {
+		margin: 2vmin auto 2vmin !important;
+	}
+
+	#again {
+		right: 31.5%;
+	}
+
 }
